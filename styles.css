@@ -9,15 +9,97 @@ header {
     background-color: #6a5acd;
     color: white;
     text-align: center;
-    padding: 30px 30px;
+    padding: 20px 20px;
     font-family: 'Lobster', cursive;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     border-radius: 20px;
+    margin-bottom: 10px;
+}
+.instructions {
+    width: 60%; 
+    font-size: 1.3em; 
+    font-weight: bold;
+    color: #6a5acd; 
+    text-align: left; 
+    margin-bottom: 30px; 
+    padding: 10px;
+    border: 2px solid #e9f0f1; 
+    border-radius: 8px; 
+    background-color: #fffacd; 
+    align-self:start;
+}
+
+.checklist {
+    width: 600px;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 15px;
+    border: 4px solid #6a5acd; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    margin: 20px auto;
+}
+
+.checklist-heading {
+    text-align: center;
+    font-size: 2em;
+    color: #6a5acd; 
     margin-bottom: 20px;
 }
 
+.checklist ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.checklist li {
+    background-color: #e0f7fa; 
+    padding: 15px;
+    margin: 8px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #6a5acd; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.checklist li:hover {
+    background-color: #80deea; 
+    transform: scale(1.05); 
+}
+
+.checklist input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.0); 
+    transition: transform 0.3s ease;
+}
+
+.checklist input[type="checkbox"]:hover {
+    transform: scale(1.4); 
+}
+
+.checklist li span {
+    margin-left: 10px;
+    font-size: 1.4em; 
+    color: #ff7043; 
+    transition: transform 0.3s ease;
+}
+
+.checklist li span:hover {
+    transform: scale(1.2); 
+}
+
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container1 {
     display: flex;
     justify-content: space-between;
     margin: 0 20px;
@@ -163,9 +245,120 @@ header {
     background-color: #80deea;
     transform: scale(1.05);
 }
+.introduction {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #166fb3;
+}
+.navbar {
+    background-color: #6a1b9a; 
+    text-align: center;
+    padding: 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+.navbar a {
+    display: inline-block; 
+    background-color: #ff5722; 
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px; 
+    margin: 0 8px; 
+    border-radius: 5px; 
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.navbar a:hover {
+    background-color: #74be0d; 
+    transform: scale(1.1); 
+}
 
+.navbar a:active {
+    background-color: #f57c00; 
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 10;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: #f1f4f4; 
+}
+.content {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fun-fact-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+footer {
+    color: rgb(8, 173, 55);
+    text-align: right;
+    padding: 20px;
+    bottom: 0;
+    left: 20px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.dora-facts {
+    background-color: #fff3e0; 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.dora-facts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dora-facts li {
+    font-size: 1.2em;
+    color: #ff5722; 
+    margin-bottom: 10px;
+}
+
+.dora-facts li strong {
+    color: #6a5acd; 
+}
+.dora-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left:250px;
+}
 @media (max-width: 768px) {
-    .container {
+    .container1 {
         flex-direction: column;
         align-items: center;
     }
@@ -174,4 +367,29 @@ header {
     .locations-column {
         width: 100%;
     }
+    .checklist {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .checklist-heading {
+        font-size: 1.8em;
+    }
+
+    .checklist li {
+        font-size: 1.1em;
+    }
+    header {
+        padding: 20px 10px; 
+    }
+
+    footer {
+        padding: 10px 5px; 
+    }
 }
+
+
+
+
+
+
